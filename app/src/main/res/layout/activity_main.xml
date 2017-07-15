@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/wood3" />
+
+    ' Line in the middle
+
+    <LinearLayout style="@style/line_in_the_middle"></LinearLayout>
+
+    *Player 1+2+3+4
+
+    <ImageButton
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/invisible"
+        android:onClick="Reset"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo4" />
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical">
+
+        *Player 1+2
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            * Player 1
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    style="@style/player_text"
+                    android:text="@string/player1" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/score"
+                    android:text="0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreOne"
+                        android:text="+1" />
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreTwo"
+                        android:text="+2" />
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreFive"
+                        android:text="+5" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/minus_a"
+                    style="@style/minus_button"
+                    android:onClick="minusA"
+                    android:text="@string/minus" />
+            </LinearLayout>
+
+            * Player 2
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    style="@style/player_text"
+                    android:text="@string/player2" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/score"
+                    android:text="0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreOneB"
+                        android:text="+1" />
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreTwoB"
+                        android:text="+2" />
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreFiveB"
+                        android:text="+5" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/minus_b"
+                    style="@style/minus_button"
+                    android:onClick="minusB"
+                    android:text="@string/minus" />
+            </LinearLayout>
+        </LinearLayout>
+
+        ' This is second row
+
+        * Player 3+4
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            *Player 3
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    style="@style/player_text"
+                    android:text="@string/player3" />
+
+                <TextView
+                    android:id="@+id/team_c_score"
+                    style="@style/score"
+                    android:text="0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreOneC"
+                        android:text="+1" />
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreTwoC"
+                        android:text="+2" />
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreFiveC"
+                        android:text="+5" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/minus_c"
+                    style="@style/minus_button"
+                    android:onClick="minusC"
+                    android:text="@string/minus" />
+
+            </LinearLayout>
+
+            *Player 4
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    style="@style/player_text"
+                    android:text="@string/player4" />
+
+                <TextView
+                    android:id="@+id/team_d_score"
+                    style="@style/score"
+                    android:text="0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreOneD"
+                        android:text="+1" />
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreTwoD"
+                        android:text="+2" />
+
+                    <Button
+                        style="@style/green_button"
+                        android:onClick="scoreFiveD"
+                        android:text="+5" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/minus_d"
+                    style="@style/minus_button"
+                    android:onClick="minusD"
+                    android:text="@string/minus" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

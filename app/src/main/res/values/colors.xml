@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="maintext">#FFFFFF</color>
+    <color name="plusbutton">#ECEFF1</color>
+    <color name="minusbutton">#FAFAFA</color>
+    <color name="invisible">#00000000</color>
+
+</resources>

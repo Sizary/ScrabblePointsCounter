@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Scrabble Points Counter</string>
+    <string name="minus">Minus 1 point</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="player3">Player 3</string>
+    <string name="player4">Player 4</string>
+</resources>
